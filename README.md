@@ -2,9 +2,9 @@
   &nbsp;Data Viz Showcase&nbsp;
 </h1>
 
-<h2 style="font-weight:normal" align="center">
-  &nbsp;[by me - Paul Schmidt](https://schmidtpaul.github.io/)&nbsp;
-</h2>
+<h4 style="font-weight:normal" align="center">
+  &nbsp;More about me: https://schmidtpaul.github.io/&nbsp;
+</h4>
 
 
 ***
