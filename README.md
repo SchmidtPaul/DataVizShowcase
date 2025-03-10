@@ -3,9 +3,11 @@
 </h1>
 
 <p style="font-weight:normal" align="center">
-  &nbsp;Contact me: https://schmidtpaul.github.io/
+  &nbsp;Contact me: https://schmidtpaul.github.io/&nbsp;
+</p>
 
-  Code and data to reproducde each data visualization can be found in the respective folder.&nbsp; 
+<p style="font-weight:normal" align="center">
+  &nbsp;Code and data to reproducde each data visualization can be found in the respective folder.&nbsp; 
 </p>
 
 ***
