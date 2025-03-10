@@ -5,7 +5,7 @@
 <p style="font-weight:normal" align="center">
   &nbsp;Contact me: https://schmidtpaul.github.io/&nbsp;
 
-  Code and data to reproducde each data visualization can be found in the respective folder. 
+  &nbsp;Code and data to reproducde each data visualization can be found in the respective folder.&nbsp; 
 </p>
 
 ***
