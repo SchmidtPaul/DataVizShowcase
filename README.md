@@ -1,6 +1,11 @@
 <h1 style="font-weight:normal" align="center">
-  &nbsp;#Data Viz Showcase&nbsp;
+  &nbsp;Data Viz Showcase&nbsp;
 </h1>
+
+<h2 style="font-weight:normal" align="center">
+  &nbsp;[by me - Paul Schmidt](https://schmidtpaul.github.io/)&nbsp;
+</h2>
+
 
 ***
 
