@@ -6,6 +6,7 @@
   &nbsp;Contact me: https://schmidtpaul.github.io/&nbsp;
 </p>
 
+Code and data to reproducde each data visualization can be found in the respective folder. 
 
 ***
 
