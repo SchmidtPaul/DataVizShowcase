@@ -1,0 +1,211 @@
+partner,domain,n,y_group,y_group_order,x_group,x_group_order,hmm
+Mulan,Alcohol,1,General Population,1,Behavior/<br>Relationship,1,4
+Mulan,Exercise,9,General Population,1,Behavior/<br>Relationship,1,2
+Mulan,Nutrition,7,General Population,1,Behavior/<br>Relationship,1,3
+Mulan,Smoking,1,General Population,1,Behavior/<br>Relationship,1,5
+Mulan,Stress,3,General Population,1,Behavior/<br>Relationship,1,6
+Rafiki,Exercise,4,General Population,1,Behavior/<br>Relationship,1,2
+Rafiki,Nutrition,3,General Population,1,Behavior/<br>Relationship,1,3
+Pumbaa,Exercise,1,General Population,1,Behavior/<br>Relationship,1,2
+Nala,Alcohol,1,General Population,1,Behavior/<br>Relationship,1,4
+Nala,Exercise,5,General Population,1,Behavior/<br>Relationship,1,2
+Nala,Nutrition,1,General Population,1,Behavior/<br>Relationship,1,3
+Nala,Smoking,1,General Population,1,Behavior/<br>Relationship,1,5
+Impa,Exercise,1,General Population,1,Behavior/<br>Relationship,1,2
+Tien,Exercise,4,General Population,1,Behavior/<br>Relationship,1,2
+Tien,Nutrition,5,General Population,1,Behavior/<br>Relationship,1,3
+Tien,Stress,2,General Population,1,Behavior/<br>Relationship,1,6
+Tingle,Exercise,12,General Population,1,Behavior/<br>Relationship,1,2
+Tingle,Nutrition,7,General Population,1,Behavior/<br>Relationship,1,3
+Navi,Exercise,14,General Population,1,Behavior/<br>Relationship,1,2
+Navi,Nutrition,23,General Population,1,Behavior/<br>Relationship,1,3
+Navi,Smoking,1,General Population,1,Behavior/<br>Relationship,1,5
+Navi,Stress,2,General Population,1,Behavior/<br>Relationship,1,6
+Mushu,Exercise,2,Medicine & Healthcare,2,Behavior/<br>Relationship,1,2
+Mushu,Nutrition,3,Medicine & Healthcare,2,Behavior/<br>Relationship,1,3
+Timon,Exercise,17,Medicine & Healthcare,2,Behavior/<br>Relationship,1,2
+Timon,Nutrition,9,Medicine & Healthcare,2,Behavior/<br>Relationship,1,3
+Simba,Exercise,13,Medicine & Healthcare,2,Behavior/<br>Relationship,1,2
+Simba,Nutrition,1,Medicine & Healthcare,2,Behavior/<br>Relationship,1,3
+Midna,Nutrition,2,Medicine & Healthcare,2,Behavior/<br>Relationship,1,3
+Android 18,Exercise,1,Medicine & Healthcare,2,Behavior/<br>Relationship,1,2
+Android 18,Nutrition,2,Medicine & Healthcare,2,Behavior/<br>Relationship,1,3
+Android 18,Stress,1,Medicine & Healthcare,2,Behavior/<br>Relationship,1,6
+Master Roshi,Nutrition,7,Medicine & Healthcare,2,Behavior/<br>Relationship,1,3
+Bulma,Nutrition,1,Medicine & Healthcare,2,Behavior/<br>Relationship,1,3
+Scar,Exercise,4,Science,3,Behavior/<br>Relationship,1,2
+Scar,Nutrition,3,Science,3,Behavior/<br>Relationship,1,3
+Scar,Stress,1,Science,3,Behavior/<br>Relationship,1,6
+Ganondorf,Exercise,6,Science,3,Behavior/<br>Relationship,1,2
+Ganondorf,Nutrition,1,Science,3,Behavior/<br>Relationship,1,3
+Zelda,Exercise,3,Science,3,Behavior/<br>Relationship,1,2
+Zelda,Nutrition,3,Science,3,Behavior/<br>Relationship,1,3
+Link,Nutrition,13,Science,3,Behavior/<br>Relationship,1,3
+Cell,Exercise,3,Science,3,Behavior/<br>Relationship,1,2
+Cell,Nutrition,1,Science,3,Behavior/<br>Relationship,1,3
+Mulan,Diagnostics,3,General Population,1,Early<br>Detection,2,NA
+Rafiki,Diagnostics,1,General Population,1,Early<br>Detection,2,NA
+Nala,Diagnostics,3,General Population,1,Early<br>Detection,2,NA
+Yamcha,Diagnostics,1,General Population,1,Early<br>Detection,2,NA
+Tingle,Diagnostics,6,General Population,1,Early<br>Detection,2,NA
+Navi,Diagnostics,9,General Population,1,Early<br>Detection,2,NA
+Mushu,Diagnostics,2,Medicine & Healthcare,2,Early<br>Detection,2,NA
+Timon,Diagnostics,6,Medicine & Healthcare,2,Early<br>Detection,2,NA
+Android 18,Diagnostics,1,Medicine & Healthcare,2,Early<br>Detection,2,NA
+Vegeta,Diagnostics,1,Medicine & Healthcare,2,Early<br>Detection,2,NA
+Goku,Diagnostics,2,Medicine & Healthcare,2,Early<br>Detection,2,NA
+Scar,Diagnostics,1,Science,3,Early<br>Detection,2,NA
+Zelda,Diagnostics,2,Science,3,Early<br>Detection,2,NA
+Cell,Diagnostics,12,Science,3,Early<br>Detection,2,NA
+Trunks,Diagnostics,1,Science,3,Early<br>Detection,2,NA
+Krillin,Diagnostics,1,Science,3,Early<br>Detection,2,NA
+Mulan,Treatment,1,General Population,1,Secondary<br>Diseases,3,NA
+Mulan,Secondary<br>Diseases,1,General Population,1,Secondary<br>Diseases,3,NA
+Mulan,Comorbidities,2,General Population,1,Secondary<br>Diseases,3,NA
+Mulan,Healthcare,10,General Population,1,Secondary<br>Diseases,3,NA
+Rafiki,Treatment,6,General Population,1,Secondary<br>Diseases,3,NA
+Rafiki,Control,1,General Population,1,Secondary<br>Diseases,3,NA
+Rafiki,Psychology,1,General Population,1,Secondary<br>Diseases,3,NA
+Rafiki,Social Daily Life,3,General Population,1,Secondary<br>Diseases,3,NA
+Rafiki,Healthcare,8,General Population,1,Secondary<br>Diseases,3,NA
+Pumbaa,Secondary<br>Diseases,1,General Population,1,Secondary<br>Diseases,3,NA
+Pumbaa,Travel,1,General Population,1,Secondary<br>Diseases,3,NA
+Pumbaa,Social Daily Life,3,General Population,1,Secondary<br>Diseases,3,NA
+Nala,Treatment,4,General Population,1,Secondary<br>Diseases,3,NA
+Nala,Secondary<br>Diseases,7,General Population,1,Secondary<br>Diseases,3,NA
+Nala,Comorbidities,1,General Population,1,Secondary<br>Diseases,3,NA
+Nala,Control,2,General Population,1,Secondary<br>Diseases,3,NA
+Nala,Travel,4,General Population,1,Secondary<br>Diseases,3,NA
+Nala,Social Daily Life,1,General Population,1,Secondary<br>Diseases,3,NA
+Nala,Healthcare,34,General Population,1,Secondary<br>Diseases,3,NA
+Impa,Healthcare,1,General Population,1,Secondary<br>Diseases,3,NA
+Piccolo,Healthcare,1,General Population,1,Secondary<br>Diseases,3,NA
+Yamcha,Secondary<br>Diseases,1,General Population,1,Secondary<br>Diseases,3,NA
+Yamcha,Comorbidities,1,General Population,1,Secondary<br>Diseases,3,NA
+Yamcha,Psychology,1,General Population,1,Secondary<br>Diseases,3,NA
+Yamcha,Healthcare,2,General Population,1,Secondary<br>Diseases,3,NA
+Tingle,Treatment,9,General Population,1,Secondary<br>Diseases,3,NA
+Tingle,Secondary<br>Diseases,1,General Population,1,Secondary<br>Diseases,3,NA
+Tingle,Comorbidities,3,General Population,1,Secondary<br>Diseases,3,NA
+Tingle,Control,1,General Population,1,Secondary<br>Diseases,3,NA
+Tingle,Psychology,2,General Population,1,Secondary<br>Diseases,3,NA
+Tingle,Social Daily Life,1,General Population,1,Secondary<br>Diseases,3,NA
+Tingle,Healthcare,21,General Population,1,Secondary<br>Diseases,3,NA
+Navi,Treatment,21,General Population,1,Secondary<br>Diseases,3,NA
+Navi,Secondary<br>Diseases,10,General Population,1,Secondary<br>Diseases,3,NA
+Navi,Comorbidities,2,General Population,1,Secondary<br>Diseases,3,NA
+Navi,Control,8,General Population,1,Secondary<br>Diseases,3,NA
+Navi,Psychology,1,General Population,1,Secondary<br>Diseases,3,NA
+Navi,Travel,5,General Population,1,Secondary<br>Diseases,3,NA
+Navi,Social Daily Life,1,General Population,1,Secondary<br>Diseases,3,NA
+Navi,Healthcare,21,General Population,1,Secondary<br>Diseases,3,NA
+Mushu,Treatment,9,Medicine & Healthcare,2,Secondary<br>Diseases,3,NA
+Mushu,Secondary<br>Diseases,8,Medicine & Healthcare,2,Secondary<br>Diseases,3,NA
+Mushu,Travel,1,Medicine & Healthcare,2,Secondary<br>Diseases,3,NA
+Mushu,Healthcare,17,Medicine & Healthcare,2,Secondary<br>Diseases,3,NA
+Timon,Treatment,39,Medicine & Healthcare,2,Secondary<br>Diseases,3,NA
+Timon,Secondary<br>Diseases,12,Medicine & Healthcare,2,Secondary<br>Diseases,3,NA
+Timon,Comorbidities,3,Medicine & Healthcare,2,Secondary<br>Diseases,3,NA
+Timon,Control,3,Medicine & Healthcare,2,Secondary<br>Diseases,3,NA
+Timon,Social Daily Life,1,Medicine & Healthcare,2,Secondary<br>Diseases,3,NA
+Timon,Healthcare,10,Medicine & Healthcare,2,Secondary<br>Diseases,3,NA
+Mufasa,Treatment,9,Medicine & Healthcare,2,Secondary<br>Diseases,3,NA
+Mufasa,Control,1,Medicine & Healthcare,2,Secondary<br>Diseases,3,NA
+Mufasa,Healthcare,2,Medicine & Healthcare,2,Secondary<br>Diseases,3,NA
+Simba,Healthcare,1,Medicine & Healthcare,2,Secondary<br>Diseases,3,NA
+Midna,Healthcare,1,Medicine & Healthcare,2,Secondary<br>Diseases,3,NA
+Android 18,Treatment,1,Medicine & Healthcare,2,Secondary<br>Diseases,3,NA
+Android 18,Healthcare,3,Medicine & Healthcare,2,Secondary<br>Diseases,3,NA
+Frieza,Treatment,3,Medicine & Healthcare,2,Secondary<br>Diseases,3,NA
+Frieza,Healthcare,1,Medicine & Healthcare,2,Secondary<br>Diseases,3,NA
+Vegeta,Treatment,1,Medicine & Healthcare,2,Secondary<br>Diseases,3,NA
+Vegeta,Comorbidities,1,Medicine & Healthcare,2,Secondary<br>Diseases,3,NA
+Vegeta,Healthcare,1,Medicine & Healthcare,2,Secondary<br>Diseases,3,NA
+Master Roshi,Treatment,4,Medicine & Healthcare,2,Secondary<br>Diseases,3,NA
+Master Roshi,Secondary<br>Diseases,1,Medicine & Healthcare,2,Secondary<br>Diseases,3,NA
+Master Roshi,Comorbidities,2,Medicine & Healthcare,2,Secondary<br>Diseases,3,NA
+Master Roshi,Control,1,Medicine & Healthcare,2,Secondary<br>Diseases,3,NA
+Master Roshi,Healthcare,17,Medicine & Healthcare,2,Secondary<br>Diseases,3,NA
+Bulma,Treatment,2,Medicine & Healthcare,2,Secondary<br>Diseases,3,NA
+Bulma,Healthcare,2,Medicine & Healthcare,2,Secondary<br>Diseases,3,NA
+Goku,Comorbidities,1,Medicine & Healthcare,2,Secondary<br>Diseases,3,NA
+Goku,Healthcare,8,Medicine & Healthcare,2,Secondary<br>Diseases,3,NA
+Scar,Treatment,7,Science,3,Secondary<br>Diseases,3,NA
+Scar,Secondary<br>Diseases,1,Science,3,Secondary<br>Diseases,3,NA
+Scar,Comorbidities,2,Science,3,Secondary<br>Diseases,3,NA
+Scar,Healthcare,7,Science,3,Secondary<br>Diseases,3,NA
+Zelda,Treatment,13,Science,3,Secondary<br>Diseases,3,NA
+Zelda,Secondary<br>Diseases,2,Science,3,Secondary<br>Diseases,3,NA
+Zelda,Travel,1,Science,3,Secondary<br>Diseases,3,NA
+Zelda,Social Daily Life,1,Science,3,Secondary<br>Diseases,3,NA
+Zelda,Healthcare,6,Science,3,Secondary<br>Diseases,3,NA
+Cell,Treatment,11,Science,3,Secondary<br>Diseases,3,NA
+Cell,Comorbidities,1,Science,3,Secondary<br>Diseases,3,NA
+Cell,Control,1,Science,3,Secondary<br>Diseases,3,NA
+Cell,Healthcare,7,Science,3,Secondary<br>Diseases,3,NA
+Trunks,Treatment,5,Science,3,Secondary<br>Diseases,3,NA
+Trunks,Secondary<br>Diseases,1,Science,3,Secondary<br>Diseases,3,NA
+Trunks,Control,1,Science,3,Secondary<br>Diseases,3,NA
+Trunks,Healthcare,1,Science,3,Secondary<br>Diseases,3,NA
+Gohan,Healthcare,1,Science,3,Secondary<br>Diseases,3,NA
+Krillin,Treatment,4,Science,3,Secondary<br>Diseases,3,NA
+Krillin,Healthcare,5,Science,3,Secondary<br>Diseases,3,NA
+Mulan,Awareness,7,General Population,1,Awareness,4,NA
+Rafiki,Awareness,6,General Population,1,Awareness,4,NA
+Pumbaa,Awareness,3,General Population,1,Awareness,4,NA
+Nala,Awareness,4,General Population,1,Awareness,4,NA
+Impa,Awareness,2,General Population,1,Awareness,4,NA
+Tien,Awareness,3,General Population,1,Awareness,4,NA
+Tingle,Awareness,19,General Population,1,Awareness,4,NA
+Navi,Awareness,1,General Population,1,Awareness,4,NA
+Mushu,Awareness,1,Medicine & Healthcare,2,Awareness,4,NA
+Timon,Awareness,7,Medicine & Healthcare,2,Awareness,4,NA
+Simba,Awareness,1,Medicine & Healthcare,2,Awareness,4,NA
+Midna,Awareness,1,Medicine & Healthcare,2,Awareness,4,NA
+Frieza,Awareness,1,Medicine & Healthcare,2,Awareness,4,NA
+Master Roshi,Awareness,4,Medicine & Healthcare,2,Awareness,4,NA
+Bulma,Awareness,1,Medicine & Healthcare,2,Awareness,4,NA
+Scar,Awareness,3,Science,3,Awareness,4,NA
+Zelda,Awareness,1,Science,3,Awareness,4,NA
+Cell,Awareness,4,Science,3,Awareness,4,NA
+Krillin,Awareness,1,Science,3,Awareness,4,NA
+Rafiki,Research,1,General Population,1,Research,5,NA
+Nala,Research,2,General Population,1,Research,5,NA
+Yamcha,Research,17,General Population,1,Research,5,NA
+Tingle,Research,4,General Population,1,Research,5,NA
+Navi,Research,3,General Population,1,Research,5,NA
+Timon,Research,5,Medicine & Healthcare,2,Research,5,NA
+Mufasa,Research,1,Medicine & Healthcare,2,Research,5,NA
+Goku,Research,2,Medicine & Healthcare,2,Research,5,NA
+Scar,Research,1,Science,3,Research,5,NA
+Zelda,Research,17,Science,3,Research,5,NA
+Link,Research,1,Science,3,Research,5,NA
+Cell,Research,26,Science,3,Research,5,NA
+Gohan,Research,2,Science,3,Research,5,NA
+Mulan,All,3,General Population,1,All,6,NA
+Rafiki,All,3,General Population,1,All,6,NA
+Pumbaa,All,2,General Population,1,All,6,NA
+Nala,All,9,General Population,1,All,6,NA
+Impa,All,1,General Population,1,All,6,NA
+Tingle,All,11,General Population,1,All,6,NA
+Navi,All,8,General Population,1,All,6,NA
+Timon,All,6,Medicine & Healthcare,2,All,6,NA
+Scar,All,3,Science,3,All,6,NA
+Zelda,All,3,Science,3,All,6,NA
+Cell,All,1,Science,3,All,6,NA
+Mulan,Risk Factors,13,General Population,1,Risk Factors,NA,NA
+Rafiki,Risk Factors,1,General Population,1,Risk Factors,NA,NA
+Nala,Risk Factors,1,General Population,1,Risk Factors,NA,NA
+Impa,Risk Factors,1,General Population,1,Risk Factors,NA,NA
+Piccolo,Risk Factors,1,General Population,1,Risk Factors,NA,NA
+Yamcha,Risk Factors,4,General Population,1,Risk Factors,NA,NA
+Tingle,Risk Factors,6,General Population,1,Risk Factors,NA,NA
+Navi,Risk Factors,25,General Population,1,Risk Factors,NA,NA
+Timon,Risk Factors,7,Medicine & Healthcare,2,Risk Factors,NA,NA
+Simba,Risk Factors,2,Medicine & Healthcare,2,Risk Factors,NA,NA
+Vegeta,Risk Factors,1,Medicine & Healthcare,2,Risk Factors,NA,NA
+Master Roshi,Risk Factors,1,Medicine & Healthcare,2,Risk Factors,NA,NA
+Scar,Risk Factors,2,Science,3,Risk Factors,NA,NA
+Zelda,Risk Factors,16,Science,3,Risk Factors,NA,NA
+Cell,Risk Factors,13,Science,3,Risk Factors,NA,NA
+Trunks,Risk Factors,1,Science,3,Risk Factors,NA,NA
