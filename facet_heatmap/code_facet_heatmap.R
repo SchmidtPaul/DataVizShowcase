@@ -15,9 +15,10 @@ library(scales)
 library(showtext)
 library(tidyverse)
 
+# function conflicts
 conflicts_prefer(dplyr::filter)
 
-# Font setup
+# font setup
 showtext_opts(dpi = 300)
 showtext_auto()
 font_add_google(name = "Roboto", family = "Roboto")

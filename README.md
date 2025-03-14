@@ -13,9 +13,15 @@
 ***
 
 ### Beekeeper
-[Link to Folder](./beekeeper)
+:file_folder: [Link to Folder](./beekeeper)
 ![](https://github.com/SchmidtPaul/data-viz-showcase/blob/main/beekeeper/beekeeper.png?raw=true)
 
 ### Facet Heatmap
-[Link to Folder](./facet_heatmap)
+:file_folder: [Link to Folder](./facet_heatmap)
 ![](https://github.com/SchmidtPaul/data-viz-showcase/blob/main/facet_heatmap/facet_heatmap.png?raw=true)
+
+### GDP, Life Expectancy & Population
+:memo: [Tutorial](https://schmidtpaul.github.io/70BiomColl_AdvDataVisR/)
+:file_folder: [Link to Folder](./gdp_life_pop)
+![](https://github.com/SchmidtPaul/data-viz-showcase/blob/main/gdp_life_pop/gdp_life_pop.png?raw=true)
+

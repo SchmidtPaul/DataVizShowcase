@@ -24,6 +24,7 @@ library(scales)
 library(showtext)
 library(tidyverse)
 
+# function conflicts
 conflicts_prefer(dplyr::filter)
 
 set.seed(43)
