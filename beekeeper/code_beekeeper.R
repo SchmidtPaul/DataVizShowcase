@@ -36,6 +36,7 @@ font_add_google(name = "Fira Sans", family = "Fira")
 
 colors <- c(brown = "#492726", yellow = "#fabb00", grey = "#f0f1f1")
 
+
 # Data import & prep ------------------------------------------------------
 dat <- read_csv(
   file = "beekeeper/dat_beekeeper.csv",
@@ -221,7 +222,8 @@ p_left <- ggplot(dat_left) +
       fill = colors[["grey"]],
       colour = NA,
       size = 0.1
-    )
+    ),
+    legend.key = element_rect(fill = NA)
   )
 
 
