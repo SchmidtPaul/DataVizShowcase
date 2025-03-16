@@ -25,3 +25,7 @@
 :file_folder: [Link to Folder](./gdp_life_pop)
 ![](https://github.com/SchmidtPaul/data-viz-showcase/blob/main/gdp_life_pop/gdp_life_pop.png?raw=true)
 
+### Treatment means comparison
+:memo: [More info on the compact letter display](https://schmidtpaul.github.io/70BiomColl_AdvDataVisR/)
+:file_folder: [Link to Folder](./treatment_means_comparison)
+![](https://github.com/SchmidtPaul/data-viz-showcase/blob/main/treatment_means_comparison/treatment_means_comparison.png?raw=true)
