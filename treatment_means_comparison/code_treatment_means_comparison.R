@@ -342,6 +342,7 @@ p <- ggplot() +
       halign = 0
     ),
     plot.caption.position = "plot",
+    plot.title = element_text(face = "bold"),
     plot.title.position = "plot",
     axis.title.x = element_blank()
   )
@@ -378,15 +379,14 @@ final_plot <- main_plot +
 
 
 # Export ------------------------------------------------------------------
-# # Save the plot as a PDF file
-# ggsave(
-#   filename = "treatment_means_comparison/treatment_means_comparison.png", 
-#   plot = final_plot,
-#   width = 14, 
-#   height = 12, 
-#   units = "cm", 
-#   dpi = 300
-# )
-# 
-# # Open the PDF file automatically (works on macOS)
+# Save the plot as a PDF file
+ggsave(
+  filename = "treatment_means_comparison/treatment_means_comparison.png",
+  plot = final_plot,
+  width = 14,
+  height = 12,
+  units = "cm",
+  dpi = 300
+)
+
 # system('open "treatment_means_comparison/treatment_means_comparison.png"')

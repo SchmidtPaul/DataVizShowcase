@@ -244,4 +244,4 @@ png(
 print(p)
 dev.off()
 
-system('open "gdp_life_pop/gdp_life_pop.png"')
+# system('open "gdp_life_pop/gdp_life_pop.png"')
