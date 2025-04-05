@@ -1,27 +1,28 @@
-# Lade benötigte Bibliotheken
 library(httr)
 library(dplyr)
 library(pokemon)
 library(purrr)
 library(rlang)
-library(tidyverse)
-library(ggimage)
-library(glue)
 
-#' Ruft Evolutionsdaten für ein bestimmtes Pokemon ab
+#' Retrieves evolution data for a specified Pokemon
 #'
-#' @param pokemon_name Character string mit dem Namen des Pokemon
+#' @param pokemon_name Character string with the name of the Pokemon
 #'
-#' @return Ein Tibble mit Evolutionsdaten oder NULL bei Fehler
+#' @return A tibble containing evolution data or NULL if retrieval fails
 #'
-#' @details Diese Funktion holt Artendaten und Evolutionsketten-Informationen
-#' von der PokeAPI und analysiert die Evolutionsbaum-Struktur.
+#' @details This function fetches species data and evolution chain information
+#' from the PokeAPI, and parses the evolution tree structure.
 #'
 #' @examples
 #' evolution_data <- get_evolution_data("pikachu")
 #'
+#' @importFrom httr GET http_status content add_headers timeout
+#' @importFrom dplyr mutate tibble bind_rows
+#' @importFrom purrr map_chr map_int map reduce
+#' @importFrom rlang abort inform %||%
+#'
 get_evolution_data <- function(pokemon_name) {
-  # Hilfsfunktion zum Abrufen von Pokemon-Artendaten
+  # Helper function to get Pokemon species data
   get_pokemon_species <- function(pokemon_name) {
     tryCatch({
       response <- GET(
@@ -43,7 +44,7 @@ get_evolution_data <- function(pokemon_name) {
     })
   }
   
-  # Hilfsfunktion zum Abrufen von Evolutionskettendaten
+  # Helper function to get evolution chain data
   get_evolution_chain <- function(chain_id) {
     tryCatch({
       response <- GET(
@@ -64,7 +65,7 @@ get_evolution_data <- function(pokemon_name) {
     })
   }
   
-  # Rekursive Funktion zum Parsen des Evolutionsbaums
+  # Recursive function to parse evolution tree
   parse_evolution_tree <- function(node) {
     current <- node$species$name
     evolves_to <- node$evolves_to
@@ -85,7 +86,7 @@ get_evolution_data <- function(pokemon_name) {
     reduce(evolved_dfs, bind_rows, .init = base_df)
   }
   
-  # Hauptlogik der Funktion
+  # Main function logic
   species <- get_pokemon_species(pokemon_name)
   if (is.null(species)) return(NULL)
   
@@ -103,23 +104,20 @@ get_evolution_data <- function(pokemon_name) {
   return(evolution_data)
 }
 
-# 1. Extrahiere Pokémon-Informationen aus dem pokemon-Paket
+
+# Get data ----------------------------------------------------------------
 pkmn_info <- pokemon::pokemon %>% 
   select(id, pokemon, gen_id = generation_id, contains("url"))
 
-# 2. Filtere nur Gen 1 Pokémon
 gen1_pkmn_names <- pkmn_info %>% filter(gen_id == 1) %>% pull(pokemon)
 
-# 3. Rufe Evolutionsdaten für jedes Gen 1 Pokémon ab
 out <- map(gen1_pkmn_names, .f = get_evolution_data, .progress = TRUE)
 
-# 4. Verarbeite Evolutionsdaten
 evolutions <- out %>% 
   bind_rows() %>% 
   select(from, to, evo_id = evolution_chain_id) %>% 
   unique()
 
-# 5. Erstelle den Basisdatensatz
 dat <- tibble(pokemon = c(evolutions$from, evolutions$to) %>% unique()) %>%
   left_join(pkmn_info, by = "pokemon") %>%
   left_join(evolutions %>% select(from, to, evo_id), by = c("pokemon" = "to")) %>%
@@ -129,13 +127,15 @@ dat <- tibble(pokemon = c(evolutions$from, evolutions$to) %>% unique()) %>%
   relocate(gen_id, evo_id, contains("url"), .after = everything()) %>%
   arrange(id)
 
-# 6. Speichere die Zwischendaten
-write.csv(x = dat, file = "pokemon/dat_pokemon.csv", row.names = FALSE)
-
-# 7. Evolutionsdaten vorbereiten
+# Evolutionsdaten vorbereiten
 evolution_data <- bind_rows(out)
 
-# 8. Funktion zur Bestimmung der Evolutionsstufe
+# Vereinfachen wir den Ansatz
+# 1. Erstelle eine eindeutige Liste aller Pokemon in jeder Evolutionskette
+all_pokemon <- unique(c(evolution_data$from, evolution_data$to))
+all_pokemon <- all_pokemon[!is.na(all_pokemon)]
+
+# 2. Bestimme die Stufe jedes Pokemon in seiner Kette
 get_stage <- function(pokemon_name, evo_data) {
   # Ist es ein Startpokemon?
   if(!(pokemon_name %in% evo_data$to)) return(0)
@@ -153,7 +153,7 @@ get_stage <- function(pokemon_name, evo_data) {
   return(stage)
 }
 
-# 9. Erstelle einen Dataframe mit eindeutigen Pokemon und ihren Stufen
+# 3. Erstelle einen Dataframe mit eindeutigen Pokemon und ihren Stufen
 pokemon_stages <- data.frame(
   pokemon = character(),
   evolution_chain_id = character(),
@@ -174,26 +174,9 @@ for(chain_id in unique(evolution_data$evolution_chain_id)) {
   }
 }
 
-# 10. Finde alle PNG-Dateien im pokemon/icon Verzeichnis
-img_paths <- list.files("pokemon/icon", pattern = "\\.png$", full.names = TRUE)
-
-# 11. Extrahiere Pokémon-Namen aus den Pfaden
-img_names <- basename(img_paths) %>% 
-  str_replace("\\.png$", "")
-
-# 12. Erstelle eine Lookup-Tabelle für Pokémon-Namen zu Pfaden
-img_lookup <- data.frame(
-  pokemon_name = img_names,
-  path_icon = img_paths
-)
-
-# 13. Kombiniere alle Daten zum finalen Datensatz
+# 4. Mit dem Hauptdatensatz verbinden
 plot_data <- dat %>%
-  # Icon-Pfade hinzufügen
-  mutate(pokemon_lower = tolower(pokemon)) %>%
-  left_join(img_lookup, by = c("pokemon_lower" = "pokemon_name")) %>%
-  select(-pokemon_lower, -contains("url")) %>%  # Entferne die temporäre Spalte
-  # Evolutionsstufen hinzufügen
+  # Nur ein Join pro Pokemon
   left_join(pokemon_stages, by = "pokemon") %>%
   # Wenn evolution_chain_id fehlt, nutze evo_id
   mutate(
@@ -202,32 +185,6 @@ plot_data <- dat %>%
     y = -as.integer(evo_id)
   ) %>%
   # Entferne Duplikate
-  distinct(pokemon, evo_id, stage, .keep_all = TRUE) %>%
-  # Behandle fehlende Icons
-  mutate(path_icon = if_else(
-    is.na(path_icon), 
-    "pokemon/icon/black.png", 
-    path_icon)
-  ) %>%
-  # Manuelle Korrekturen für bestimmte Pokémon
-  mutate(
-    id = case_when(
-      pokemon == "perrserker" ~ 863,
-      pokemon == "annihilape" ~ 979,
-      pokemon == "sirfetchd" ~ 865,
-      pokemon == "mr-rime" ~ 866,
-      pokemon == "kleavor" ~ 900,
-      TRUE ~ id
-    ),
-    gen_id = case_when(
-      pokemon == "perrserker" ~ 8,
-      pokemon == "annihilape" ~ 9,
-      pokemon == "sirfetchd" ~ 8,
-      pokemon == "mr-rime" ~ 8,
-      pokemon == "kleavor" ~ 8,
-      TRUE ~ gen_id
-    )
-  )
+  distinct(pokemon, evo_id, stage, .keep_all = TRUE)
 
-# 14. Exportiere die finalen Daten
 write.csv(x = plot_data, file = "pokemon/dat_pokemon.csv", row.names = FALSE)
